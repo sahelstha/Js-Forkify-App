@@ -28,5 +28,9 @@
         "color-functions"
       ]
     }
+  },
+  "dependencies": {
+    "core-js": "^3.50.0",
+    "regenerator-runtime": "^0.14.1"
   }
 }
