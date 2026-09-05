@@ -1,0 +1,32 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "Recipe application",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahelstha/Js-Forkify-App.git"
+  },
+  "author": "Sahel Shrestha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahelstha/Js-Forkify-App/issues"
+  },
+  "homepage": "https://github.com/sahelstha/Js-Forkify-App#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.4",
+    "parcel": "^2.16.4"
+  },
+  "@parcel/transformer-sass": {
+    "sassOptions": {
+      "silenceDeprecations": [
+        "import",
+        "global-builtin",
+        "color-functions"
+      ]
+    }
+  }
+}
