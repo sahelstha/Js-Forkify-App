@@ -44,7 +44,7 @@ export const loadSearchResults = async query => {
       };
     });
 
-    console.log(state.search);
+    // console.log(state.search);
   } catch (error) {
     throw error;
   }
