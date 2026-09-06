@@ -9,12 +9,12 @@ class RecipeView {
     this.#data = data;
 
     const markup = this.#generateMarkup();
-    this.#clear();
+    this.#parentElement.innerHTML = '';
     this.#parentElement.insertAdjacentHTML('afterbegin', markup);
   }
 
-  #clear() {
-    this.#parentElement.innerHTML = '';
+  addHandlerRender(handler) {
+    ['hashchange', 'load'].forEach(ev => window.addEventListener(ev, handler));
   }
 
   renderSpinner() {
@@ -26,7 +26,7 @@ class RecipeView {
       </div>
     `;
 
-    this.#clear();
+    this.#parentElement.innerHTML = '';
     this.#parentElement.insertAdjacentHTML('afterbegin', markup);
   }
 
