@@ -27,8 +27,10 @@ const controlRecipe = async () => {
     // console.log(model.state.recipe);
 
     recipeView.render(model.state.recipe);
+    // debugger;
   } catch (err) {
     recipeView.renderError();
+    console.log(err);
   }
 };
 
@@ -71,7 +73,12 @@ const controlAddBookmark = () => {
   bookmarksView.render(model.state.bookmarks);
 };
 
+const controlBookmarks = function () {
+  bookmarksView.render(model.state.bookmarks);
+};
+
 const init = function () {
+  bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipe);
   recipeView.addHandlerUpdateServings(controlServings);
   recipeView.addHandlerAddBookmark(controlAddBookmark);
