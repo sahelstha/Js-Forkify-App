@@ -254,9 +254,26 @@
           <label>Title</label>
           <input value="TEST" required name="title" type="text" />
           <label>URL</label>
-          <input value="TEST" required name="sourceUrl" type="text" />
-          <label>Image URL</label>
+          <!-- <input value="TEST" required name="sourceUrl" type="text" />
+          
           <input value="TEST" required name="image" type="text" />
+           -->
+
+          <input
+            value="http://www.mybakingaddiction.com/spicy-chicken-and-pepper-jack-pizza-recipe/"
+            required
+            name="sourceUrl"
+            type="url"
+            placeholder="e.g. https://www.example.com"
+          />
+          <label>Image URL</label>
+          <input
+            value="http://forkify-api.herokuapp.com/images/FlatBread21of1a180.jpg"
+            required
+            name="image"
+            type="url"
+            placeholder="e.g. https://www.example.com"
+          />
           <label>Publisher</label>
           <input value="TEST" required name="publisher" type="text" />
           <label>Prep time</label>
